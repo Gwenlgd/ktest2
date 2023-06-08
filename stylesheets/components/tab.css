@@ -1,0 +1,76 @@
+.system_tabs {
+  justify-items: center;
+  align-self: center;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.tab {
+  display:inline-block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-right: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background:var(--clr-blue-hover);
+}
+
+.tab_0 {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background:var(--clr-blue);
+  color: var(--clr-white) ;
+}
+
+.tab_1 {
+  background:var(--clr-white);
+  padding-bottom: 10px;
+}
+
+.tab_1:hover {
+  background:var(--clr-white);
+}
+
+.contenu_tab {
+  background-color:var(--clr-white);
+  border-radius: 4px;
+  height: max-content;
+  margin-top: -1px;
+  padding: 5px;
+  display:none;
+}
+
+.tab-category {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+
+}
+
+.tab-category::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -10px
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-left: 43px;
+  font-weight: 600;
+  color: var(--clr-blue);
+}

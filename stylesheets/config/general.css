@@ -21,7 +21,6 @@ body {
 main {
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
   gap: 30px;
   position: absolute;
   width: clamp(29rem, 100vw, 125rem);
@@ -44,9 +43,6 @@ h3 {
 
 header, main, nav, nav li,
 .p-number,
-.display-cards ,
-.display-cards button,
-.cards-cont,
 .card,
 .card-img,
 .card-descr,
