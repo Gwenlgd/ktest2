@@ -1,0 +1,35 @@
+
+.display-cards {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display-cards h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.display-cards button {
+  background: var(--clr-blue);
+  align-items: center;
+  padding: 10px 12px;
+  gap: 4px;
+  border: 1px solid var(--clr-white);
+  border-radius: 4px;
+}
+
+button p {
+  font-size: 14px;
+  color: var(--clr-white);
+}
+
+.fa-solid {
+  color: var(--clr-white);
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+button:hover {
+  background: var(--clr-blue-hoover);
+  transition: 0.6s;
+}

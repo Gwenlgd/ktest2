@@ -1,0 +1,141 @@
+.cards-cont {
+  flex-direction: column;
+  padding: 0px;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.cards-show::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-show {
+  background: var(--clr-white);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: clamp(0.8em, 0.9vw, 1em);
+  justify-items: center;
+  align-self: center;
+  height: 630px;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1490px) {
+  .cards-show {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .cards-show {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .cards-show {
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+  }
+}
+
+.card {
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  gap: 10px;
+  width: 300px;
+  height: 223px;
+  border-radius: 8px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  position: relative;
+  flex: none;
+  width: 275px;
+  height: 137px;
+}
+
+
+.card-img img {
+  width: 275px;
+  height: 137px;
+}
+
+
+#card .card-descr, #card .card-descr p {
+  opacity: 0;
+}
+
+
+.card-descr, .card-descr p {
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 275px;
+  height: 137px;
+  background: rgba(20, 24, 31, 0.5);
+  border-radius: 4px;
+  color: var(--clr-white);
+
+}
+
+.card-descr p {
+  opacity: 0;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(20, 24, 31, 0.8);
+  width: 255px;
+  height: 70px;
+  padding: 0px 10px;
+}
+
+#card:hover .card-descr, #card:hover .card-descr p{
+  opacity: 1;
+  overscroll-behavior: contain;
+}
+
+.card-details {
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 100%;
+  height: 41px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 0.9em;
+  color: var(--clr-grey);
+}
