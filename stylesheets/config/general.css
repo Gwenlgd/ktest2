@@ -29,7 +29,7 @@ main {
   padding-left: clamp(1rem, 1.5vw, 6rem);
   padding-right: clamp(1rem, 1.5vw, 6rem);
   left: 0px;
-  top: 110px;
+  top: 100px;
 }
 
 li, a, ul {

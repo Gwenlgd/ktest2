@@ -29,7 +29,7 @@
 
 .tab_1 {
   background:var(--clr-white);
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 
 .tab_1:hover {
@@ -40,9 +40,13 @@
   background-color:var(--clr-white);
   border-radius: 4px;
   height: max-content;
-  margin-top: -1px;
+  margin-top: -6px;
   padding: 5px;
   display:none;
+}
+
+#contenu_tab_komin, #contenu_tab_new {
+  height: 640px;
 }
 
 .tab-category {
@@ -50,7 +54,6 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
-
 }
 
 .tab-category::-webkit-scrollbar {
