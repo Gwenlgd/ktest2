@@ -99,7 +99,7 @@
   grid-gap: clamp(0.8em, 1.2vw, 2em);
   justify-items: center;
   align-self: center;
-  margin-top: 35px;
+  margin-top: 80px;
   margin-left: 0px;
   padding: 0px 150px;
 }
@@ -156,9 +156,11 @@
 }
 
 #contenu_tab_new h2 {
+  margin-top: 20px;
   margin-left: 26px;
   color: var(--clr-black);
 }
+
 .button-new {
   display: flex;
   justify-content: center;
